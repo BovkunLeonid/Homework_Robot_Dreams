@@ -1,0 +1,176 @@
+body {
+    width: var(--main-cont-width);
+    margin: 0 auto;
+    margin-top: 220px;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background: var(--header-bg-color);
+    width: var(--main-cont-width);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.cap p {
+    font-size: 1.5em;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.cap, nav, .services {
+    display: flex;
+    justify-content: space-around;
+}
+
+a::before, h1::before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo {
+    margin-top: 12px;
+    width: var(--main-logo-width);
+    height: var(--main-logo-height);
+}
+
+h1, a {
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    width: 100%;
+    height: 55px;
+    border-radius: var(--main-border-radius);
+    margin: 2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.8em;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    background: var(--h1-bg-color);
+    color: var(--h1-text-color);
+}
+
+a:hover {
+    background: var(--main-hover-color);
+}
+
+.button {
+    width: 60px;
+    height: 70px;
+    border-radius: 8px;
+    background-color: var(--main-bg-color);
+    display: none;
+    padding-left: 11px;
+}
+
+.button span{
+    display: inline-block;
+    width: 48px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+div h1:nth-child(2) {
+    display: none;
+}
+
+.services {
+        /* Для візуалізаціїї скрола */
+        margin-bottom: 900px;
+}
+
+:root{
+    --main-cont-width: 100%;
+    --main-border-radius: 10px;
+    --main-logo-width: 490px;
+    --main-logo-height: 90px;
+    --servis-blok-height: 55px;
+    --servis-blok-width: 260px;
+    --servis-position-top: 355px;
+    --servis-font-size: 1.9em;
+    --form-margin-top: 10px;
+    --input-margin-bottom: 10px;
+    --servis-img-height: 447px;
+}
+
+@media screen and (max-width: 899px){
+    .adress, .telephone, .nav>h1:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 899px){
+    div h1:nth-child(2) {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 899px){
+    :root{
+        --main-logo-width: 270px;
+        --main-logo-height: 50px;
+        --servis-blok-width: 190px;
+        --servis-font-size: 1.5em;
+        --servis-blok-height: 45px;
+        --servis-img-height: 330px;
+        --servis-position-top: 273px;  
+    }
+}
+
+@media screen and (max-width: 899px){
+    body{
+        margin-top: 125px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .telephone {
+        display: inline-block;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .nav a, .kod{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 610px){
+    body{
+        margin-top: 210px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .cap, .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .button {
+        display: inline-block;
+        position: absolute;
+        left: 40px;
+        top: 78px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .services div a {
+        --servis-blok-width: 100%;
+    }
+}
+
+
+
