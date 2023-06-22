@@ -11,14 +11,14 @@ main img {
 }
 
 @keyframes img-animation {
-    0%{
+    0% {
         transform: scale(1);
     }
-    70%{
+    70% {
         transform: scale(1.31);
         box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 70px 4px;
     }
-    100%{
+    100% {
         transform: scale(1.3);
         box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 70px 4px;
     }
