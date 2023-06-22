@@ -15,6 +15,11 @@
     width: 100%;
     height: var(--servis-img-height);
     border-radius: 10px;
+    opacity: 70%;
+}
+
+.services div:hover {
+    opacity: 100%;
 }
 
 .metric {

@@ -6,6 +6,7 @@ body {
 }
 
 header {
+    box-shadow: var(--header-box-shadow);
     background: var(--header-bg-color);
     width: var(--main-cont-width);
     position: fixed;
@@ -87,6 +88,7 @@ div h1:nth-child(2) {
 }
 
 :root{
+    --header-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     --main-cont-width: 100%;
     --main-border-radius: 10px;
     --main-logo-width: 490px;
@@ -128,6 +130,12 @@ div h1:nth-child(2) {
 @media screen and (max-width: 899px){
     body{
         margin-top: 125px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    header {
+        box-shadow: none;
     }
 }
 
