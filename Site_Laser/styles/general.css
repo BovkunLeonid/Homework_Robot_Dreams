@@ -106,16 +106,9 @@ div h1:nth-child(2) {
     .adress, .telephone, .nav>h1:first-child {
         display: none;
     }
-}
-
-@media screen and (max-width: 899px){
     div h1:nth-child(2) {
         display: block;
     }
-}
-
-
-@media screen and (max-width: 899px){
     :root{
         --main-logo-width: 270px;
         --main-logo-height: 50px;
@@ -125,9 +118,6 @@ div h1:nth-child(2) {
         --servis-img-height: 330px;
         --servis-position-top: 273px;  
     }
-}
-
-@media screen and (max-width: 899px){
     body{
         margin-top: 125px;
     }
@@ -137,48 +127,23 @@ div h1:nth-child(2) {
     header {
         box-shadow: none;
     }
-}
-
-@media screen and (max-width: 610px){
     .telephone {
         display: inline-block;
         margin-left: 20%;
     }
-}
-
-@media screen and (max-width: 610px){
     .nav a, .kod{
         display: none;
     }
-}
-
-@media screen and (max-width: 610px){
     body{
         margin-top: 210px;
     }
-}
-
-@media screen and (max-width: 610px){
-    .cap, .services {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 610px){
     .button {
         display: inline-block;
         position: absolute;
         left: 40px;
         top: 78px;
     }
-}
-
-@media screen and (max-width: 610px){
     .services div a {
         --servis-blok-width: 100%;
     }
 }
-
-
-
