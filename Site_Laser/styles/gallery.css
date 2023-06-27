@@ -26,15 +26,9 @@ main img:hover {
     main {
         height: 5000px;
     }
-}
-
-@media screen and (max-width: 610px){
     main img {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 610px){
     main img:hover {
         transform: none;
         box-shadow: none; 
