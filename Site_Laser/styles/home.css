@@ -18,8 +18,17 @@
     opacity: 70%;
 }
 
+@keyframes services-opacity {
+    from {
+        opacity: 70%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
 .services div:hover {
-    opacity: 100%;
+    animation: services-opacity 3s;
 }
 
 .metric {
