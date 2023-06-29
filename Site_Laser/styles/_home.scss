@@ -1,21 +1,25 @@
-.services div a {
-    width: var(--servis-blok-width);
-    height: var(--servis-blok-height);
-    font-size: var(--servis-font-size);
-    font-weight: 400;
-    text-align: left;
-    padding: 10px 0 0 10px;
-    display: inline-block; 
-    position: relative;
-    top: var(--servis-position-top);
-    text-align: left;
-}
-
 .services div {
     width: 100%;
     height: var(--servis-img-height);
     border-radius: 10px;
     opacity: 70%;
+
+    &:hover {
+        animation: services-opacity 3s;
+    }
+
+    a {
+        width: var(--servis-blok-width);
+        height: var(--servis-blok-height);
+        font-size: var(--servis-font-size);
+        font-weight: 400;
+        text-align: left;
+        padding: 10px 0 0 10px;
+        display: inline-block; 
+        position: relative;
+        top: var(--servis-position-top);
+        text-align: left;
+    }
 }
 
 @keyframes services-opacity {
@@ -25,10 +29,6 @@
     to {
         opacity: 100%;
     }
-}
-
-.services div:hover {
-    animation: services-opacity 3s;
 }
 
 .metric {
