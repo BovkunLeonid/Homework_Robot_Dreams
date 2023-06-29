@@ -1,3 +1,7 @@
+@mixin speed($speed: 5s) {
+    animation: img-animation $speed ease-out forwards;
+}
+
 .main-gallery {
     display: flex;
     flex-direction: column;
@@ -9,7 +13,7 @@
     width: 50%;
 
     &:hover {
-    animation: img-animation 2s ease-out forwards;
+    @include speed;
     }
     }
 }
