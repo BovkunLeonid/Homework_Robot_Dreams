@@ -20,7 +20,7 @@ body {
 
 header {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    background: var(--header-bg-color);
+    background: $header-bg-color;
     width: 100%;
     position: fixed;
     top: 0;
@@ -46,8 +46,8 @@ header {
 }
 
 h1, a {
-    background: var(--main-bg-color);
-    color: var(--main-text-color);
+    background: $main-bg-color;
+    color: $main-text-color;
     width: 100%;
     height: 55px;
     border-radius: var(--main-border-radius);
@@ -67,19 +67,19 @@ h1, a {
 }
 
 h1 {
-    background: var(--h1-bg-color);
-    color: var(--h1-text-color);
+    background: $h1-bg-color;
+    color: $h1-text-color;
 }
 
 a:hover {
-    background: var(--main-hover-color);
+    background: $main-hover-color;
 }
 
 .button {
     width: 60px;
     height: 70px;
     border-radius: 8px;
-    background-color: var(--main-bg-color);
+    background-color: $main-bg-color;
     display: none;
     padding-left: 11px;
 
