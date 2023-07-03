@@ -96,7 +96,7 @@ div h1:nth-child(2) {
 }
 
 @media screen and (max-width: 899px){
-    .adress, .telephone, div>h1:first-child {
+    .adress, .telephone, .adress-boodst, .telephone-boodstr, div>h1:first-child {
         display: none;
     }
     div h1:nth-child(2) {
@@ -124,7 +124,7 @@ div h1:nth-child(2) {
         display: inline-block;
         margin-left: 20%;
     }
-    .kod{
+    .kod, nav{
         display: none;
     }
     body{
