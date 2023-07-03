@@ -96,7 +96,7 @@ div h1:nth-child(2) {
 }
 
 @media screen and (max-width: 899px){
-    .adress, .telephone, .nav>h1:first-child {
+    .adress, .telephone, div>h1:first-child {
         display: none;
     }
     div h1:nth-child(2) {
@@ -124,7 +124,7 @@ div h1:nth-child(2) {
         display: inline-block;
         margin-left: 20%;
     }
-    .nav a, .kod{
+    .kod{
         display: none;
     }
     body{
@@ -140,8 +140,11 @@ div h1:nth-child(2) {
         left: 40px;
         top: 78px;
     }
-    .services div a {
+    .services {
+        justify-content: flex-start;
+        div a {
         --servis-blok-width: 100%;
+        }
     }
 }
 
