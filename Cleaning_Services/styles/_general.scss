@@ -1,0 +1,71 @@
+@mixin midle-text ($color:#2E8CAD) {
+    color: $color;
+    text-align: center;
+    font-family: Mitr;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+@mixin button-styles {
+    position: relative;
+    width: 160px;
+    height: 50px;
+    border-radius: 40px;
+    background: #2EBAEB;
+    border: 1px solid #2EBAEB;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+
+    &:hover {
+        background: #2E8CAD;
+        border: 1px solid #2E8CAD;  
+    } 
+    
+    &:active {
+        transform: translate(5px, 5px);
+        transition: all 0.1s linear;
+    }
+
+    .border-button {
+        display: block;
+        width: 160px;
+        height: 50px;
+        border: 1px solid #2EBAEB;
+        border-radius: 40px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        
+        &:hover {
+            border: 1px solid #2E8CAD;
+        } 
+        
+        &:active {
+            transform: translate(-5px, -5px);
+            transition: all 0.1s linear;
+        }
+    }
+}
+
+.button-centr {
+    margin-top: 50px;
+    margin-left: calc(50% - 80px);
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    width: 100%;
+    background-color: #47626B;
+    height: 92px;
+}

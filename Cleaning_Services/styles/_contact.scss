@@ -1,0 +1,67 @@
+.contact-us {
+    position: absolute;
+    top: 214px;
+    left: 55%;
+    width: 480px;
+    height: 465px;
+    border-radius: 30px;
+    background: #FFF; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 1174px){
+        & {
+            left: 40%;
+            width: 400px;
+        }
+    }
+
+    @media screen and (max-width: 920px){
+        & {
+            top: 440px;
+            left: 10%;
+            width: 50%;
+            height: 300px;
+        }
+    }
+
+    @media screen and (max-width: 720px){
+        & {
+            top: 430px;
+            left: 3%;
+            width: 400px;
+            height: 300px;
+        }
+    }
+
+    .cont {
+        margin-top: 60px;     
+        @include midle-text;
+    }
+
+    .input-cont {
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        width: 374px;
+        height: 56px;
+        border-radius: 61px;
+        background: #94D3EA;
+        color: #FFF;
+        border: none;
+    }
+
+    .butt {
+        width: 168px;
+        height: 56px;
+        border-radius: 61px;
+        background: #FFF;
+        border: 3px solid #94D3EA;
+        transition: 0.3s;
+
+        &:hover {
+            background: #2E8CAD;
+        }
+    }
+}
