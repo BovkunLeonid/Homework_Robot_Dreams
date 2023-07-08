@@ -13,8 +13,8 @@
     width: 50%;
 
     &:hover {
-    @include speed;
-    }
+        @include speed;
+     }
     }
 }
 
@@ -43,10 +43,10 @@
     main {
         height: 5000px;
     }
-    main img {
+    .main-gallery img {
         width: 100%;
     }
-    main img:hover {
+    .main-gallery img:hover {
         animation: none;
         box-shadow: none; 
     }

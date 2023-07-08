@@ -38,7 +38,6 @@ header {
     justify-content: space-around;
 }
 
-
 .logo {
     margin-top: 12px;
     width: var(--main-logo-width);
@@ -97,7 +96,7 @@ div h1:nth-child(2) {
 }
 
 @media screen and (max-width: 899px){
-    .adress, .telephone, .nav>h1:first-child {
+    .adress, .telephone, .adress-boodst, .telephone-boodstr, div>h1:first-child {
         display: none;
     }
     div h1:nth-child(2) {
@@ -125,7 +124,7 @@ div h1:nth-child(2) {
         display: inline-block;
         margin-left: 20%;
     }
-    .nav a, .kod{
+    .kod, nav{
         display: none;
     }
     body{
@@ -141,8 +140,11 @@ div h1:nth-child(2) {
         left: 40px;
         top: 78px;
     }
-    .services div a {
+    .services {
+        justify-content: flex-start;
+        div a {
         --servis-blok-width: 100%;
+        }
     }
 }
 
