@@ -1,7 +1,9 @@
-let number1 = prompt('Hello! Напишіть перше число')
-let number2 = prompt('Напишіть друге число')
-let sum = number1 + number2
-let difference = number1 - number2
-let multiplication = number1 * number2
-let division = number1 / number2
+let numberA = prompt('Hello! Напишіть перше число')
+let numberB = prompt('Напишіть друге число')
+numberA = Number(numberA)
+numberB = Number(numberB)
+let sum = numberA + numberB
+let difference = numberA - numberB
+let multiplication = numberA * numberB
+let division = numberA / numberB
 alert ('сума = ' + sum + ';  різниця = ' + difference + ';  множення = ' + multiplication + ';  дiлення = ' + division)
