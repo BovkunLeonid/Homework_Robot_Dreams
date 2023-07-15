@@ -17,13 +17,13 @@ if (number1 === '' || number2 === '') {
     alert (mesError)
 } else if (number2 == 0){
         alert (actionNoDel);
-    } else if (number1 < number2) {
-        if (confirm (mesContinue)) {
-            alert (actionFull);
-            }    
-        } else {
+        } else if (number1 < number2) {
+                if (confirm (mesContinue)) {
+                    alert (actionFull);
+                    }    
+                } else {
                 alert (actionFull);
-        }
+                }
 
 //Version 3.1
 /*
