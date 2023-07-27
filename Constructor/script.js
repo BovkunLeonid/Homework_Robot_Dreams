@@ -10,30 +10,36 @@ function Accumulator (number) {
     }
 } 
 
-const accum1 = new Accumulator (100);
+const accumVarta = new Accumulator (100);
 
-accum1.increment();
-console.log(accum1.number);
+accumVarta.increment();
+console.log(accumVarta.number);
 
-// Task 2 version 1
+accumVarta.decrement();
+console.log(accumVarta.number);
 
-function CancelableAccumulator (number) {
-    this.number = number,
+// Task 2 
+
+function CancelableAccumulator(number) {
+    Accumulator.call(this, number);
     this.numberStart = number,
     this.clear = function() {
         this.number = this.numberStart;
-    },
-    this.increment = function() {
-        this.number += 1;
-    },
-    this.decrement = function() {
-        this.number -= 1;
-    }
-} 
+    } 
+}
 
-const accum2 = new CancelableAccumulator (100);
+CancelableAccumulator.prototype = Accumulator.prototype;
 
-accum2.decrement();
-console.log(accum2.number);
-accum2.clear();
-console.log(accum2.number);
+let accumDuracell = new CancelableAccumulator (150);
+
+accumDuracell.increment();
+accumDuracell.increment();
+accumDuracell.increment();
+accumDuracell.increment();
+accumDuracell.increment();
+
+console.log(accumDuracell.number);
+
+accumDuracell.clear();
+
+console.log(accumDuracell.number);
