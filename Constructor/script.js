@@ -1,7 +1,7 @@
 // Task 1
 
 function Accumulator (number) {
-    this.number = number,
+    this.number = number;
     this.increment = function() {
         this.number += 1;
     },
@@ -10,7 +10,7 @@ function Accumulator (number) {
     }
 } 
 
-const accumVarta = new Accumulator (100);
+const accumVarta = new Accumulator(100);
 
 accumVarta.increment();
 console.log(accumVarta.number);
@@ -22,7 +22,7 @@ console.log(accumVarta.number);
 
 function CancelableAccumulator(number) {
     Accumulator.call(this, number);
-    this.numberStart = number,
+    this.numberStart = number;
     this.clear = function() {
         this.number = this.numberStart;
     } 
@@ -30,7 +30,7 @@ function CancelableAccumulator(number) {
 
 CancelableAccumulator.prototype = Accumulator.prototype;
 
-let accumDuracell = new CancelableAccumulator (150);
+let accumDuracell = new CancelableAccumulator(150);
 
 accumDuracell.increment();
 accumDuracell.increment();
