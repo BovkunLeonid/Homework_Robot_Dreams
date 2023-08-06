@@ -1,0 +1,79 @@
+body {
+    width: var(--main-cont-width);
+    margin: 0 auto;
+    margin-top: 220px;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background: var(--header-bg-color);
+    width: var(--main-cont-width);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.cap p {
+    font-size: 1.5em;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.cap, nav, .services {
+    display: flex;
+    justify-content: space-between;
+}
+
+a::before, h1::before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo {
+    margin-top: 12px;
+    width: var(--main-logo-width);
+    height: var(--main-logo-height);
+}
+
+h1, a {
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    width: 100%;
+    height: 55px;
+    border-radius: var(--main-border-radius);
+    margin: 2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    background: var(--h1-bg-color);
+    color: var(--h1-text-color);
+}
+
+a:hover {
+    background: var(--main-hover-color);
+}
+
+.services {
+        /* Для візуалізаціїї скрола */
+        margin-bottom: 900px;
+}
+
+:root{
+    --main-cont-width: 1024px;
+    --main-border-radius: 10px;
+    --main-logo-width: 490px;
+    --main-logo-height: 90px;
+    --servis-blok-height: 55px;
+    --servis-blok-width: 260px;
+    --servis-position-top: 355px;
+    --form-margin-top: 10px;
+    --input-margin-bottom: 10px;
+}
+
