@@ -8,10 +8,15 @@ main {
 
 main img {
     width: 50%;
-}
-
-main img:hover {
-    transform: scale(1.3);
     transition: all 1s linear;
 }
 
+/* main img:hover {
+    transform: scale(1.3);
+    transition: all 1s linear;
+} */
+
+.big-img {
+    transform: scale(1.3);
+    transition: all 1s linear;
+}

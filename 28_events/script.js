@@ -1,20 +1,34 @@
-const aaa = document.getElementById('aaa');
-const mainTag = document.getElementsByTagName('main');
-const bigImg = document.getElementsByClassName('big-img');
-const smallImg = document.getElementsByClassName('small-img');
-let imgAll = document.querySelectorAll('main img');
-let img = document.querySelector('main img');
-let h2Tag = document.getElementsByTagName('h2');
+// version 1
 
-const element = document.querySelector('.small-img');
-element.addEventListener('click', function(event) {
-    console.log('Hello');
+let imgs = document.querySelector('.gallery-img');
+
+imgs.addEventListener('click', (event) => {
+    let img = event.target;
+    if (img.classList.contains('big-img')) {
+        img.classList.remove('big-img');   
+    } else {
+        img.classList.add('big-img');
+    }
 });
-    
 
+// version 2
 
+// let imgs2 = document.querySelector('.gallery-img');
 
-img.onclick = function () {
-    img.style.color = 'red';
-    console.log(imgAll);
-}
+// imgs2.addEventListener('click', (event) => {
+//     event.target.classList.toggle('big-img');
+// });
+
+// version 3
+
+// let imgs3 = document.querySelectorAll('img');
+
+// imgs3.forEach((img) => {
+//     img.addEventListener('click', function () {
+//         if (img.classList.contains('big-img')) {
+//             img.classList.remove('big-img');   
+//         } else {
+//             img.classList.add('big-img');
+//         }
+//     });  
+// });
