@@ -10,7 +10,7 @@ function fnMaxElement(arr) {
         }  
     }
     return maxElement;
-}
+};
 
 function fnMinElement(arr) {
   let minElement = arr[0];
@@ -22,7 +22,7 @@ function fnMinElement(arr) {
       }  
   }
   return minElement;
-}
+};
 
 function findSumOfArrayOne(arr) {
     let sumElement = 0;
@@ -32,7 +32,7 @@ function findSumOfArrayOne(arr) {
         }  
     }
     return sumElement;
-}
+};
 
 function fnSumElement(value1, value2) {
   return value1 + value2;
@@ -46,6 +46,6 @@ function findSumOfArray(arr) {
     }
   }
   return sum;
-}
+};
 
 module.exports = {fnMaxElement, fnMinElement, findSumOfArrayOne, findSumOfArray};

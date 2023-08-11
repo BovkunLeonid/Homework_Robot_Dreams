@@ -8,7 +8,7 @@ function Accumulator (number) {
     this.decrement = function() {
         return this.number -= 1;
     }
-}  
+};
 
 const accumVarta = new Accumulator(100);
 
@@ -18,7 +18,7 @@ function CancelableAccumulator(number) {
     this.clear = function() {
        return this.number = this.numberStart;
     } 
-}
+};
 
 CancelableAccumulator.prototype = Accumulator.prototype;
 
