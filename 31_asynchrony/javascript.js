@@ -1,5 +1,6 @@
 const button = document.getElementById('button');
 const timeСard = document.querySelector('.time-card');
+const error = document.querySelector('.error');
 const dateСart = document.querySelector('.date-cart');
 const containerWrap = document.getElementsByClassName('container-wrap')[0];
 
@@ -72,6 +73,7 @@ function fnSwitchDateCounter() {
         dateСart.classList.remove('display-none'); 
         button.textContent = 'та натисни на мени';
         containerWrap.classList.remove('big-height');
+        location.reload();
     }
 };
 
@@ -98,7 +100,11 @@ function fnMinusSecond() {
     day = (seconds - 1) / (60 * 60 * 24);
     day = Math.round(day);
     timeDayEl.textContent = `${day} днів`;
-    setTimeout('fnMinusSecond()', 1000);
+    if (isNaN(seconds)) {
+        error.classList.remove('display-none');
+    } else {
+        setTimeout('fnMinusSecond()', 1000);
+    }
 };
 
 button.addEventListener('click', () => { 
