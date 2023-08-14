@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days before the birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div class="container-wrap">
+        <div class="date-cart">
+            <label for="date-birth">Введи дату свого народження</label>
+            <input type="date" class="input-date" id="date-birth" value=""> 
+        </div>
+        <div class="time-card display-none">
+            <p>до твого дня народження залишилось:</p>
+            <p class="time-seconds"></p>
+            <p class="time-minutes"></p>
+            <p class="time-hours"></p>
+            <p class="time-day"></p>
+        </div>
+        <div class="error display-none">
+            <p>Введіть коректну дату!</p>
+        </div>
+        <button id="button" class="button" role="button">та натисни на мени</button>
+    </div>
+</body>
+</html>
