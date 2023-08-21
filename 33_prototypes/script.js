@@ -9,14 +9,14 @@ class Degree {
 
     pow(n) {
         for (let i = 0; i < this.arr.length; i++){
-            let result = 0;
-            result = this.arr[i] ** n;
-            console.log(result);
+            this.arr[i] = this.arr[i] ** n;
         }
+        console.log(this.arr);
     }
 }
 
 let myArrayDegree = new Degree(myArray);
+
 myArrayDegree.pow(2);
 
 // Task 2 __________________________________________
@@ -25,6 +25,7 @@ class Message {
     message() {
         alert('test');
     } 
+
     defer(n) {
         setTimeout(this.message, n);
     }
