@@ -1,0 +1,21 @@
+.products {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    text-align: center;
+
+    display: inline-block;
+    width: 25%;
+    min-height: 150px;
+    border: 1px solid hsl(240, 1%, 58%);
+    border-radius: 5px;
+}
+
+.item img {
+    width: 140px;
+    height: 100px;
+    box-shadow: 0px 0px 82px 52px rgba(0,0,0,0.1);
+}
