@@ -10,7 +10,7 @@ function getContentPost() {
     })
     .then((data) => {
         console.log(data);
-        if (data.length == 0){
+        if (data.length === 0){
             postsHTML.innerHTML += `
             <div class="alert alert-success" role="alert">
                 <h4 class="alert-heading">I don't have any posts yet, but I'm working on it!</h4>
