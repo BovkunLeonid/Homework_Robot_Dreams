@@ -1,0 +1,28 @@
+.header {
+    background: hwb(0 95% 3%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.cap p {
+    font-size: 1.2em;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.cap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-top: 12px;
+    width: 270px;
+    height: 50px;
+}
+
+.contact {
+    margin-top: 10px;
+}
