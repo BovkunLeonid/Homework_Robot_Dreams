@@ -1,5 +1,5 @@
 import Product from '../Product/Product';
-import './products.css';
+import './Products.css';
 
 export default function Products(props) {
 

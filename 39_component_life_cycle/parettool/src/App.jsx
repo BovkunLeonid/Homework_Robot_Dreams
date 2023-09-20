@@ -4,8 +4,7 @@ import Products from './products/Products';
 import './App.css';
 
 const App = () => {
-  let productsAll = [];
-  const [products, setProducts] = useState(productsAll);
+  const [products, setProducts] = useState([]);
   const [productsInCart, setProductsInCart] = useState([]);
 
   const addProductToCart = (product) => {
@@ -16,10 +15,7 @@ const App = () => {
   const apiGet = () => {
     fetch('https://dummyjson.com/products')
     .then((res) => res.json())
-    .then((data) => {
-    productsAll = data.products;
-    setProducts(productsAll);
-    });
+    .then((data) => setProducts(data.products))
   };
 
   useEffect(() => {

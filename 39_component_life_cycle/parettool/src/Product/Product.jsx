@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import './product.css';
+import './Product.css';
 
 export default function Product(props) {
 

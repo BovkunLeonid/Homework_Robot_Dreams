@@ -1,5 +1,5 @@
 import basket from '../assets/basket.png';
-import './cart.css';
+import './Cart.css';
 
 const Cart = (props) => {
   return (

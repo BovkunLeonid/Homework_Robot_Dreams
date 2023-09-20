@@ -1,6 +1,6 @@
 import logo from '../assets/logo-paretool.png';
 import Cart from '../Cart/Cart';
-import './header.css';
+import './Header.css';
 
 export default function Header(props) {
   return (
