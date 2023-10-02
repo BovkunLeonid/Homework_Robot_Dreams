@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment } from './redux/counter';
+import { decrement, increment } from '../redux/counter';
+import './Counter.css';
 
 
 export function Counter() {
@@ -8,7 +9,7 @@ export function Counter() {
 
   return (
     <div>
-      <div>
+      <div className='count'>
         <button
           aria-label="Increment value"
           onClick={() => dispatch(increment())}

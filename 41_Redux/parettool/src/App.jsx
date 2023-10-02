@@ -1,13 +1,12 @@
 import React, {createContext, useEffect, useState } from 'react';
 import Header from './Header/Header';
-import { Routes, Route} from "react-router-dom";
+import { Routes, Route} from 'react-router-dom';
 import CreateProduct from './CreateProduct/CreateProduct';
 import Products from './Products/Products';
 import './App.css';
 import NotFound from './NotFound';
 import { useSelector, useDispatch } from 'react-redux'
-import { Counter } from './Counter'
-import store from './redux/store';
+import { Counter } from './Counter/Counter'
 
 export const NotificationContext = createContext();
 
@@ -42,12 +41,12 @@ const App = () => {
     <>
     <NotificationContext.Provider value={[products, productsInCart, addProductToCart]}>
     <Header></Header>
+    <Counter></Counter>
       <Routes>
         <Route path='/products' element={<Products addProductToCart={addProductToCart}></Products>}></Route>
         <Route path='/createProduct' element={<CreateProduct addNewProduct={addNewProduct}></CreateProduct>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-      <Counter></Counter>
     </NotificationContext.Provider>
     
     </>
