@@ -5,11 +5,16 @@ import CreateProduct from './CreateProduct/CreateProduct';
 import Products from './Products/Products';
 import './App.css';
 import NotFound from './NotFound';
-import { Counter } from './Counter';
+import { useSelector, useDispatch } from 'react-redux'
+import { Counter } from './Counter'
+import store from './redux/store';
 
 export const NotificationContext = createContext();
 
 const App = () => {
+  const count = useSelector(state => state.counter.value)
+  const dispatch = useDispatch()
+
   const [products, setProducts] = useState([]);
   const [productsInCart, setProductsInCart] = useState([]);
 
@@ -44,6 +49,7 @@ const App = () => {
       </Routes>
       <Counter></Counter>
     </NotificationContext.Provider>
+    
     </>
   );
 };
