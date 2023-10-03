@@ -1,0 +1,17 @@
+.form-wrap {
+    margin-top: 130px;
+    width: 100%;
+}
+
+.form-box {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid #e9dede;;
+    background-color: #e9dede;
+}
+
+.errors {
+    color: red;
+}
