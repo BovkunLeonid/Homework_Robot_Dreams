@@ -5,7 +5,7 @@ import './Header.css';
 import { useSelector } from 'react-redux';
 
 export default function Header() {
-  const count = useSelector((state) => state.counter.value)
+  // const count = useSelector((state) => state.counter.value)
   return (
     <div className='header'>
       <div className='cap'>
@@ -24,9 +24,6 @@ export default function Header() {
         </span>
         <span className='menu-page'>
           <Link to='/CreateProduct'>CreateProducts</Link>
-        </span>
-        <span className='menu-page'>
-          counter: {count}
         </span>
       </div>
     </div>

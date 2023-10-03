@@ -1,18 +1,16 @@
 import { useForm } from 'react-hook-form';
 import './CreateProduct.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { addNewProduct } from '../redux/productsSlice';
 
-export default function CreateProduct (props) {
-
+export default function CreateProduct () {
     const form = useForm();
-    const { 
-        register,
-        handleSubmit,
-        watch,
-        formState: {errors},
-    } = useForm();
+    const { register, handleSubmit, watch, formState: {errors} } = useForm();
+    const products = useSelector(state => state.products.products);
+    const dispatch = useDispatch();
 
     const onSubmit = (data) => {
-        props.addNewProduct(data);
+        addNewProduct(data);
     };
 
     return(
